@@ -143,6 +143,13 @@
       "dependencies": {},
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.osc-jack": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.shadergraphassets": {
       "version": "2.5.1",
       "depth": 0,
@@ -159,6 +166,15 @@
       "source": "registry",
       "dependencies": {
         "jp.keijiro.shadergraphassets": "1.0.4"
+      },
+      "url": "https://registry.npmjs.com"
+    },
+    "jp.keijiro.vzovfx": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "jp.keijiro.osc-jack": "2.0.0"
       },
       "url": "https://registry.npmjs.com"
     },
