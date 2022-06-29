@@ -5,7 +5,8 @@
     "jp.keijiro.klak.motion": "1.0.2",
     "jp.keijiro.metawire": "1.3.1",
     "jp.keijiro.shadergraphassets": "2.5.1",
-    "jp.keijiro.vfxgraphassets": "1.1.1"
+    "jp.keijiro.vfxgraphassets": "1.1.1",
+    "jp.keijiro.flashglitch": "file:../../FlashGlitch/Packages/jp.keijiro.flashglitch"
   },
   "scopedRegistries": [
     {

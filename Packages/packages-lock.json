@@ -102,6 +102,15 @@
       },
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.flashglitch": {
+      "version": "file:../../FlashGlitch/Packages/jp.keijiro.flashglitch",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.shadergraph": "12.1.0",
+        "jp.keijiro.noiseshader": "2.0.0"
+      }
+    },
     "jp.keijiro.kino.post-processing": {
       "version": "2.1.15",
       "depth": 0,
