@@ -3,6 +3,9 @@ Desktop.ini
 .DS_Store
 *.swp
 
+/Assets/Unity.VisualScripting.Generated
+/Assets/Unity.VisualScripting.Generated.meta
+
 /Library
 /Logs
 /Recordings

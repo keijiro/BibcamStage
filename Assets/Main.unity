@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &865885489
+--- !u!1 &214274083
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,29 +131,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 865885490}
+  - component: {fileID: 214274086}
+  - component: {fileID: 214274085}
+  - component: {fileID: 214274084}
   m_Layer: 0
-  m_Name: System
+  m_Name: VisualScripting SceneVariables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &865885490
+--- !u!114 &214274084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214274083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765181c9ef4b24d32a4f7cbd2ef370dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &214274085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214274083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Scene","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!4 &214274086
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865885489}
+  m_GameObject: {fileID: 214274083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1851935136}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867464899
 GameObject:
@@ -188,7 +216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &867464901
 MeshRenderer:
@@ -281,7 +309,7 @@ GameObject:
   - component: {fileID: 1851935137}
   - component: {fileID: 1851935138}
   m_Layer: 0
-  m_Name: VZO
+  m_Name: VZO Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -299,8 +327,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 865885490}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1851935137
 MonoBehaviour:
@@ -362,3 +390,68 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &2097479382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097479385}
+  - component: {fileID: 2097479384}
+  - component: {fileID: 2097479383}
+  m_Layer: 0
+  m_Name: Key Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2097479383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097479382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[{"name":"CameraController","value":null,"typeHandle":{"Identification":"Bibcam.CameraRigController,
+      Bibcam.Vfx.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"EffectSwitcher","value":null,"typeHandle":{"Identification":"Bibcam.EffectSwitcher,
+      Bibcam.Vfx.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-228.1316,"y":208.0},"zoom":1.0,"elements":[{"chainable":false,"member":{"name":"Find","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%name":{"$content":"Canvas","$type":"System.String"}},"position":{"x":-576.0,"y":-360.0},"guid":"23bc9b5c-db8c-4cb8-b08b-b2cbe8adaddd","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"12"},{"kind":"Graph","defaultValues":{"name":{"$content":"CameraController","$type":"System.String"}},"position":{"x":156.0,"y":-360.0},"guid":"e2c10008-71ca-4910-9da7-c13c4876adda","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"15"},{"chainable":false,"member":{"name":"FindObjectOfType","parameterTypes":["System.Type"],"targetType":"UnityEngine.Component","targetTypeName":"UnityEngine.Component","$version":"A"},"defaultValues":{"%type":{"$content":"Bibcam.CameraRigController","$type":"System.RuntimeType"}},"position":{"x":-204.0,"y":-360.0},"guid":"9b67a471-5194-4726-b247-2d26da566a24","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"17"},{"coroutine":false,"defaultValues":{},"position":{"x":-720.0,"y":-360.0},"guid":"4fef8fd3-ec8f-4fbb-9a83-565daad023c0","$version":"A","$type":"Unity.VisualScripting.Start","$id":"20"},{"chainable":false,"member":{"name":"SwitchToCloseRangeView","parameterTypes":[],"targetType":"Bibcam.CameraRigController","targetTypeName":"Bibcam.CameraRigController","$version":"A"},"defaultValues":{"target":null},"position":{"x":-408.0,"y":216.0},"guid":"aaed0722-ed58-400a-a43d-f28ee4459478","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"22"},{"chainable":false,"member":{"name":"SetActive","parameterTypes":["System.Boolean"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"target":null,"%value":{"$content":false,"$type":"System.Boolean"}},"position":{"x":-384.0,"y":-360.0},"guid":"808d0971-e711-4240-a8f1-07149fda087d","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"25"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"CameraController","$type":"System.String"}},"position":{"x":-720.0,"y":-12.0},"guid":"0e2ff583-ce34-4723-bdb5-8908167d20b9","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"28"},{"chainable":false,"member":{"name":"SwitchEffect","parameterTypes":["System.Int32"],"targetType":"Bibcam.EffectSwitcher","targetTypeName":"Bibcam.EffectSwitcher","$version":"A"},"defaultValues":{"target":null,"%index":{"$content":0,"$type":"System.Int32"}},"position":{"x":252.0,"y":108.0},"guid":"f5453ded-bf0a-4310-bfb4-617630c390f8","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"30"},{"coroutine":false,"defaultValues":{"key":{"$content":"Alpha3","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":-720.0,"y":336.0},"guid":"49993d6a-403a-4712-be6a-ed461b2a07ac","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"33"},{"chainable":false,"member":{"name":"SwitchToLongRangeView","parameterTypes":[],"targetType":"Bibcam.CameraRigController","targetTypeName":"Bibcam.CameraRigController","$version":"A"},"defaultValues":{"target":null},"position":{"x":-408.0,"y":336.0},"guid":"22f434f0-f4eb-4a77-8e05-da9a21b8746d","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"35"},{"chainable":false,"member":{"name":"SwitchToFirstPersonView","parameterTypes":[],"targetType":"Bibcam.CameraRigController","targetTypeName":"Bibcam.CameraRigController","$version":"A"},"defaultValues":{"target":null},"position":{"x":-408.0,"y":96.0},"guid":"73ac0bcc-18ae-4a87-81b4-d62ed4d23c5e","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"38"},{"coroutine":false,"defaultValues":{"key":{"$content":"Alpha2","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":-720.0,"y":216.0},"guid":"ff081623-b6a4-41f7-9470-733e3ef76640","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"41"},{"coroutine":false,"defaultValues":{"key":{"$content":"Alpha1","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":-720.0,"y":96.0},"guid":"2c8182ac-0618-4fe6-aa26-726aee74b71e","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"43"},{"kind":"Graph","defaultValues":{"name":{"$content":"EffectSwitcher","$type":"System.String"}},"position":{"x":768.0,"y":-360.0},"guid":"013f035e-33aa-4513-a1bd-5f045f1bf7f4","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"45"},{"chainable":false,"member":{"name":"FindObjectOfType","parameterTypes":["System.Type"],"targetType":"UnityEngine.Component","targetTypeName":"UnityEngine.Component","$version":"A"},"defaultValues":{"%type":{"$content":"Bibcam.EffectSwitcher","$type":"System.RuntimeType"}},"position":{"x":408.0,"y":-360.0},"guid":"848ae702-d482-4394-86bc-1d33514d1c57","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"47"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"EffectSwitcher","$type":"System.String"}},"position":{"x":0.0,"y":0.0},"guid":"f556cd0c-9c66-4611-8005-17297223deae","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"50"},{"coroutine":false,"defaultValues":{"key":{"$content":"Q","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":0.0,"y":108.0},"guid":"6e717ba6-2354-4177-b556-c2bb652d732f","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"52"},{"chainable":false,"member":{"name":"SwitchEffect","parameterTypes":["System.Int32"],"targetType":"Bibcam.EffectSwitcher","targetTypeName":"Bibcam.EffectSwitcher","$version":"A"},"defaultValues":{"target":null,"%index":{"$content":1,"$type":"System.Int32"}},"position":{"x":252.0,"y":252.0},"guid":"e28101d4-8f01-45ee-9424-4313b75fb064","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"54"},{"coroutine":false,"defaultValues":{"key":{"$content":"W","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":0.0,"y":252.0},"guid":"0c814294-aca3-4921-bf3e-b4f94e28f754","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"57"},{"chainable":false,"member":{"name":"SwitchEffect","parameterTypes":["System.Int32"],"targetType":"Bibcam.EffectSwitcher","targetTypeName":"Bibcam.EffectSwitcher","$version":"A"},"defaultValues":{"target":null,"%index":{"$content":2,"$type":"System.Int32"}},"position":{"x":252.0,"y":396.0},"guid":"a810f9d9-6a77-40f5-8c82-045e7ef106d4","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"59"},{"coroutine":false,"defaultValues":{"key":{"$content":"E","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":0.0,"y":396.0},"guid":"e422189e-fa43-4e0b-a9a1-a624aebd5572","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"62"},{"chainable":false,"member":{"name":"SwitchEffect","parameterTypes":["System.Int32"],"targetType":"Bibcam.EffectSwitcher","targetTypeName":"Bibcam.EffectSwitcher","$version":"A"},"defaultValues":{"target":null,"%index":{"$content":3,"$type":"System.Int32"}},"position":{"x":252.0,"y":540.0},"guid":"969d3eb6-4291-48b6-90a9-924553598978","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"64"},{"coroutine":false,"defaultValues":{"key":{"$content":"R","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Unity.VisualScripting.PressState"}},"position":{"x":0.0,"y":540.0},"guid":"6b0bbd24-cac6-4897-a214-88d1f84a5681","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"67"},{"sourceUnit":{"$ref":"57"},"sourceKey":"trigger","destinationUnit":{"$ref":"54"},"destinationKey":"enter","guid":"cd37f5f7-2c34-4a0a-8ec0-461c8b18d7e6","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"25"},"sourceKey":"exit","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"cbaab096-be60-435b-b3c9-7c7ccd3a8244","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"47"},"sourceKey":"exit","destinationUnit":{"$ref":"45"},"destinationKey":"assign","guid":"db27aa62-d15c-4418-9674-67509fdd74ca","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"33"},"sourceKey":"trigger","destinationUnit":{"$ref":"35"},"destinationKey":"enter","guid":"adf05559-3cf4-4f8d-ab70-fd0737334109","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"exit","destinationUnit":{"$ref":"25"},"destinationKey":"enter","guid":"46abb8ee-698d-433e-9831-4eccb93e62c6","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"41"},"sourceKey":"trigger","destinationUnit":{"$ref":"22"},"destinationKey":"enter","guid":"af6c46c0-040e-498e-b679-8194adfbbf8a","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"4dbf7126-7424-436c-bfe0-17ad9893666d","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"assigned","destinationUnit":{"$ref":"47"},"destinationKey":"enter","guid":"65a21f6b-116a-4665-976c-024bb7ee3989","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"52"},"sourceKey":"trigger","destinationUnit":{"$ref":"30"},"destinationKey":"enter","guid":"579c800d-2663-4a77-9dd7-78e1cb62c5f4","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"43"},"sourceKey":"trigger","destinationUnit":{"$ref":"38"},"destinationKey":"enter","guid":"a9728eab-4b43-43d6-a38a-bd62d84374a1","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"62"},"sourceKey":"trigger","destinationUnit":{"$ref":"59"},"destinationKey":"enter","guid":"0a6ff07c-4b3e-4503-99dd-9a912cd60917","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"67"},"sourceKey":"trigger","destinationUnit":{"$ref":"64"},"destinationKey":"enter","guid":"ff261fd8-c561-42b4-b305-99ebf36e6787","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"assign","guid":"ff9efe2d-4c20-4910-aba8-1f9e38bcfef5","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"28"},"sourceKey":"value","destinationUnit":{"$ref":"38"},"destinationKey":"target","guid":"a13d8fcb-841f-42fe-96f6-dea3f38e641c","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"result","destinationUnit":{"$ref":"15"},"destinationKey":"input","guid":"a15209e1-9f9a-4c6f-b955-81b8883523f0","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"result","destinationUnit":{"$ref":"25"},"destinationKey":"target","guid":"b0051087-ec46-4baf-9c86-bea0bad637ff","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"28"},"sourceKey":"value","destinationUnit":{"$ref":"22"},"destinationKey":"target","guid":"e67eea8b-b45a-49b4-bd44-5fdaf99068be","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"28"},"sourceKey":"value","destinationUnit":{"$ref":"35"},"destinationKey":"target","guid":"908638f6-d42e-4c4e-83d0-4c9e5791a1ba","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"47"},"sourceKey":"result","destinationUnit":{"$ref":"45"},"destinationKey":"input","guid":"a50d94dc-89a6-4a5c-a04e-f5361ba66e4e","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"50"},"sourceKey":"value","destinationUnit":{"$ref":"30"},"destinationKey":"target","guid":"8ffb0d61-8540-45d8-afbb-7c3261d57657","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"50"},"sourceKey":"value","destinationUnit":{"$ref":"54"},"destinationKey":"target","guid":"642c1749-506f-41f9-8593-ffe291403afb","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"50"},"sourceKey":"value","destinationUnit":{"$ref":"59"},"destinationKey":"target","guid":"48198617-5e4c-4098-ab00-6563f996f32b","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"50"},"sourceKey":"value","destinationUnit":{"$ref":"64"},"destinationKey":"target","guid":"12ffc1f0-4d2e-4da2-9ac9-6d437120420e","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!114 &2097479384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097479382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!4 &2097479385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097479382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
