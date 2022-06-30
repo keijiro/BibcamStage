@@ -6,7 +6,6 @@ namespace BibcamStage {
 
 public sealed class FlashGlitchBridge : MonoBehaviour
 {
-    [SerializeField] VideoPlayer _source = null;
     [SerializeField, Range(0, 1)] float _randomize = 0.2f;
 
     public void OnNoteChannel0(int note, float velocity)
@@ -25,9 +24,15 @@ public sealed class FlashGlitchBridge : MonoBehaviour
     }
 
     FlashGlitchController _controller;
+    VideoPlayer _source;
 
     void Start()
-      => _controller = GetComponent<FlashGlitchController>();
+    {
+        _controller = GetComponent<FlashGlitchController>();
+        _source = FindObjectOfType<VideoPlayer>();
+        transform.parent = GameObject.FindWithTag("MainCamera").transform;
+        transform.localPosition = Vector3.forward;
+    }
 
     void Update()
     {
