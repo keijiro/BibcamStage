@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Boot.unity
+    guid: 14ea8f1b14f004643aa10060da8bc11a
+  - enabled: 1
+    path: Assets/Main.unity
+    guid: 971bd25208eff4e47b79577288aa503e
+  - enabled: 1
+    path: Packages/jp.keijiro.bibcam.vfxgraph.samples/Runtime/ThirdPerson.unity
+    guid: c7cd0dbbe37f87f4b8ba3b680edec0ad
   m_configObjects: {}
