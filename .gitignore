@@ -12,4 +12,5 @@ Desktop.ini
 /Temp
 /UserSettings
 
-*.mp4
+/Assets/StreamingAssets/*.mp4
+/Assets/StreamingAssets/*.mp4.meta
