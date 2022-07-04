@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "com.unity.visualscripting": "1.7.8",
-    "jp.keijiro.bibcam.vfxgraph.samples": "file:../../BibcamVfx/Packages/jp.keijiro.bibcam.vfxgraph.samples",
-    "jp.keijiro.flashglitch": "file:../../FlashGlitch/Packages/jp.keijiro.flashglitch",
+    "jp.keijiro.bibcam.vfxgraph.samples": "file:../BibcamVfx/Packages/jp.keijiro.bibcam.vfxgraph.samples",
+    "jp.keijiro.flashglitch": "file:../FlashGlitch/Packages/jp.keijiro.flashglitch",
     "jp.keijiro.vzovfx": "1.0.0"
   },
   "scopedRegistries": [

@@ -113,7 +113,7 @@
       "url": "https://registry.npmjs.com"
     },
     "jp.keijiro.bibcam.vfxgraph.samples": {
-      "version": "file:../../BibcamVfx/Packages/jp.keijiro.bibcam.vfxgraph.samples",
+      "version": "file:../BibcamVfx/Packages/jp.keijiro.bibcam.vfxgraph.samples",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -126,7 +126,7 @@
       }
     },
     "jp.keijiro.flashglitch": {
-      "version": "file:../../FlashGlitch/Packages/jp.keijiro.flashglitch",
+      "version": "file:../FlashGlitch/Packages/jp.keijiro.flashglitch",
       "depth": 0,
       "source": "local",
       "dependencies": {

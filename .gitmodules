@@ -1,0 +1,6 @@
+[submodule "BibcamVfx"]
+	path = BibcamVfx
+	url = git@github.com:keijiro/BibcamVfx.git
+[submodule "FlashGlitch"]
+	path = FlashGlitch
+	url = git@github.com:keijiro/FlashGlitch.git
