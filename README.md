@@ -17,6 +17,10 @@ Visuals:
 
 - Unity 2021.3
 
+This repository doesn't contain a Bibcam video clip file to avoid the
+GitHub quota/bandwidth limitations. You have to put a clip file (.mp4) in
+the `Assets/StreamingAssets` directory.
+
 Audio:
 
 - Bitwig Studio 4.3
