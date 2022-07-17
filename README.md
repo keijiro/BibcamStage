@@ -10,6 +10,11 @@ volumetric video system, used in a live performance at [Channel #22].
 [Bibcam]: https://github.com/keijiro/Bibcam
 [Channel #22]: https://twitter.com/tokyomax/status/1543851341348761602
 
+[YouTube (1)](https://www.youtube.com/watch?v=v3mRlMx_6Is),
+[YouTube (2)](https://www.youtube.com/watch?v=YIS_Xpgf_I8),
+[Twitter moment](https://twitter.com/i/events/1546515078488686592)
+
+
 System Requirements
 -------------------
 
